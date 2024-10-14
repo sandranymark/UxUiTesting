@@ -1,0 +1,39 @@
+:root {
+    --pink-color: #D1066C;
+    --blue-color: #28CFD8;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#pinkGroup {
+    fill: var(--pink-color);
+}
+
+#blueGroup {
+    fill: var(--blue-color);
+}
+
+#pink1,
+#pink2,
+#blue {
+    transition: all 1s ease;
+}
+
+#pink1 {
+    transform: translateX(-100%);
+}
+
+svg:hover #blue {
+    transform: translateX(20%);
+}
+
+svg:hover #pink2 {
+    transform: translateX(40%);
+    opacity: 0;
+}
+
+svg:hover #pink1 {
+    transform: translateX(0%);
+}
